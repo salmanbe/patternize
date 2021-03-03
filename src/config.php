@@ -4,34 +4,33 @@ return [
     
     /*
     |--------------------------------------------------------------------------
-    | Original image name
+    | Default trim
     |--------------------------------------------------------------------------
     |
-    | If set to true then system will not generate pretty file name
-    | using salmanbe/Filename library.
+    | If set to true then all posted values will be trimmed from right and left.
+    | Value can overridden from table configuration. 
     |
     */
     'trim' => true,
     
     /*
     |--------------------------------------------------------------------------
-    | Default maximum image upload size in MB
+    | Default single space
     |--------------------------------------------------------------------------
     |
-    | Define default maximum image upload size.
-    | This option should never be empty and size must be in MB.
+    | If set to true then all posted values will have only one space between 2 words.
+    | Value can overridden from table configuration. 
     |
     */
     'single_space' => true,
     
     /*
     |--------------------------------------------------------------------------
-    | Default resize type
+    | Default strip html
     |--------------------------------------------------------------------------
     |
-    | Default resize type applies to whole project
-    | Possible values  'canvas', 'crop', 'resize', 'original', 'center', 'fit'
-    | This value can be overridden when calling the function.
+    | If set to true then html will be removed from all all posted values.
+    | Value can overridden from table configuration. 
     |
     */
     'strip_html' => true,
