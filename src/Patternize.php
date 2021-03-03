@@ -176,8 +176,12 @@ trait Patternize {
      * @return void
      */
     private function stripHtml() {
+        
+        if($this->hasKey('allow_html')){
+            return;
+        }
 
-        if ($this->config['strip_html'] || $this->hasConfigKey('strip_html')) {
+        if ($this->config['strip_html'] || $this->hasKey('strip_html')) {
             $this->value = strip_tags($this->value);
         }
     }
