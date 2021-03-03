@@ -1,0 +1,35 @@
+{
+    "name": "salmanbe/patternize",
+    "description": "Library to patternize strings.",
+    "keywords": ["laravel", "patternize", "string functions"],
+    "homepage": "https://github.com/salmanbe/patternize",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Salmanbe\\Patternize\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Salman Javaid",
+            "email": "salman@salman.be",
+            "homepage": "https://www.salman.be"
+        }
+    ],   
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Salmanbe\\Patternize\\PatternizeServiceProvider"
+            ],
+            "aliases": {
+                "Resize": "Salmanbe\\Patternize\\Patternize"
+            }
+        }
+    }
+    
+}
