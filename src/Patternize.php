@@ -57,12 +57,12 @@ trait Patternize {
         }
 
         $this->config = Config::get('patternize');
-
-        $this->pattern = $this->config[$model->getTable()][$action];
         
         if(!isset($this->config[$model->getTable()][$action])){
             return;
         }
+        
+        $this->pattern = $this->config[$model->getTable()][$action];
 
         $this->attributes = $model->getAttributes();
 
